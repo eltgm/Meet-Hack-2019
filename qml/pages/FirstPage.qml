@@ -33,8 +33,9 @@ Page {
             // Добавить объект типа Label с названием последнего файла. Использовать свойство selectedFile элемента file.
             Label {
                 id : selectedFileLabel
+                wrapMode: Text.Wrap
+                width: parent.width
                 text : file.selectedFile
-                elide: Text.ElideLeft
             }
 
             // Добавить объект типа FilePickerPage для загрузки страницы выбора файлов с расширением .pdf. При выборе файла в стек страниц загружается SecondPage.qml
