@@ -67,6 +67,12 @@ Page {
          pdfLoader.loadPDF(file.selectedFile);
          currentPage.text = pdfLoader.currentPage
          file.page = pdfLoader.currentPage
+         file.openedFile = file.selectedFile
+     }
+
+     Component.onDestruction: {
+         file.openedFile = ""
+         file.page = 0
      }
 }
 

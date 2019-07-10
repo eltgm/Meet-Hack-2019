@@ -11,7 +11,8 @@ ApplicationWindow
 
     Item {
         id: file
-        property string selectedFile : "No file name"
+        property string selectedFile: "No file name"
+        property string openedFile: ""
         property int page
     }
 }

@@ -7,7 +7,8 @@ CoverBackground {
         anchors.centerIn: parent
         wrapMode: Text.Wrap
         width: parent.width
-        text: file.selectedFile
+        height: parent.height - 10
+        text: file.openedFile
     }
 
     Label {
