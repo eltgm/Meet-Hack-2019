@@ -34,9 +34,11 @@ Page {
             Button {
                 id: previous
                 text: qsTr("Previous")
+
                 onClicked: {
                     pdfLoader.drawPreviousPage()
                     currentPage.text = pdfLoader.currentPage
+                    file.page = pdfLoader.currentPage
                 }
             }
 
@@ -49,9 +51,11 @@ Page {
             Button {
                 id: next
                 text: qsTr("Next")
+
                 onClicked: {
                     pdfLoader.drawNextPage()
                     currentPage.text = pdfLoader.currentPage
+                    file.page = pdfLoader.currentPage
                 }
             }
          }
@@ -62,6 +66,7 @@ Page {
      Component.onCompleted: {
          pdfLoader.loadPDF(file.selectedFile);
          currentPage.text = pdfLoader.currentPage
+         file.page = pdfLoader.currentPage
      }
 }
 

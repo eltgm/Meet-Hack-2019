@@ -3,9 +3,17 @@ import Sailfish.Silica 1.0
 
 CoverBackground {
     Label {
-        id: label
+        id: selectedFile
         anchors.centerIn: parent
-        text: qsTr("My Cover")
+        wrapMode: Text.Wrap
+        width: parent.width
+        text: file.selectedFile
+    }
+
+    Label {
+        id: page
+        anchors.top: selectedFile.bottom
+        text: file.page
     }
 
     CoverActionList {

@@ -43,9 +43,10 @@ Page {
                 id: filePickerPage
                 FilePickerPage {
                     nameFilters: [ '*.pdf' ]
+
                     onSelectedContentPropertiesChanged: {
                         file.selectedFile = selectedContentProperties.filePath
-                        //pageStack.push(Qt.resolvedUrl("SecondPage.qml"))
+                        pageStack.push(Qt.resolvedUrl("SecondPage.qml"))
                     }
                 }
             }
@@ -54,6 +55,7 @@ Page {
             Button {
                 id : loadFile
                 text: "Choose file"
+
                 onClicked: pageStack.push(filePickerPage)
             }
         }

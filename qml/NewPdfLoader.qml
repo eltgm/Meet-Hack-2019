@@ -12,5 +12,6 @@ ApplicationWindow
     Item {
         id: file
         property string selectedFile
+        property int page
     }
 }
