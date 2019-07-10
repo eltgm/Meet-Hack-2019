@@ -27,12 +27,13 @@ Page {
             Label {
                 id : lastFileName
                 x: Theme.horizontalPageMargin
-                text: qsTr("Last file name")
+                text: qsTr("Last file name:")
             }
 
             // Добавить объект типа Label с названием последнего файла. Использовать свойство selectedFile элемента file.
             Label {
                 id : selectedFileLabel
+                x: Theme.horizontalPageMargin
                 wrapMode: Text.Wrap
                 width: parent.width
                 text : file.selectedFile

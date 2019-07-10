@@ -8,7 +8,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Last file name</source>
+        <source>Last file name:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

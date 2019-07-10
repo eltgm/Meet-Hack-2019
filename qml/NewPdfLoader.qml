@@ -11,7 +11,7 @@ ApplicationWindow
 
     Item {
         id: file
-        property string selectedFile
+        property string selectedFile : "No file name"
         property int page
     }
 }
